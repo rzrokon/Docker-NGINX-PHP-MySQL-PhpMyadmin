@@ -89,7 +89,7 @@ docker-compose up
 ```
 
 This will create the containers and populate the database with the given dump.
-```
+
 
 ### Creating database dumps
 
