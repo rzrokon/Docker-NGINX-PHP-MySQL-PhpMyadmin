@@ -42,7 +42,7 @@ services:
         image: mysql:latest
         ports:
             - ${IP}:3300:3306
-        command: "mysqld --init-file /data/application/init.sql"
+        command: "mysqld --init-file /data/application/init.sql --default-authentication-plugin=mysql_native_password"
         volumes:
             - ./data/init.sql:/data/application/init.sql
             - db_data:/var/lib/mysql
